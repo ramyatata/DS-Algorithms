@@ -41,7 +41,7 @@ var detectCapitalUse = function(word) {
       capitalCount++;
   }
 
-  return capitalCount === 1 ? word[0].toUpperCase === word[0]? true: false :false
+  return capitalCount === 1 ? (word[0].toUpperCase() === word[0] ? true: false) : false
 };
 
 //o(n) = n, string length worse case scenario
