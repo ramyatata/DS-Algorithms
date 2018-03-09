@@ -31,4 +31,4 @@ const reverseWords = (s) => {
 };
 
 //o(n) = n, n is no.of words in string
-//space = constant
+//space = o(n)since words increase with size of s
