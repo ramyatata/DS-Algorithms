@@ -7,6 +7,7 @@ The move sequence is represented by a string. And each move is represent by a ch
 const JudgeRouteCircle = () => {
   //input = string
   //output = bool
+  //constraints = i/p is always string upper case
 
   //let position = [0, 0];
   //split moves into array;
@@ -22,10 +23,10 @@ const JudgeRouteCircle = () => {
   let position = [0, 0];
   let movs = moves.split('');
   movs.forEach((move) => {
-      if(move === 'R') position[0] += 1;
-      if(move === 'L') position[0] -= 1;
-      if(move === 'U') position[1] += 1;
-      if(move === 'D') position[1] -= 1;
+    if(move === 'R') position[0] += 1;
+    if(move === 'L') position[0] -= 1;
+    if(move === 'U') position[1] += 1;
+    if(move === 'D') position[1] -= 1;
   });
 
   return position[0] === 0 && position[1] === 0;
