@@ -32,4 +32,6 @@ const JudgeRouteCircle = () => {
   return position[0] === 0 && position[1] === 0;
 };
 
+//O(n) = n,  n is the length of input string
+//space complexity = constant
 
