@@ -51,29 +51,25 @@ const firstUniqChar = (s) => {
 
 
 
-function findFirstUniqueCharacter( inputString ) {
-    let freqCounter = [];
+var firstUniqChar = function(s) {
+  let count = [];
+  let index = -1;
 
-    // The issue using Map data structure is during the retrival. As it does not gaurantee the keys will be retrived in the same order as they were inserted
-    // Hence, we use an array of frequency counter. But in this array keys are found using the ascii values of the character.
-
-    inputString.split('').forEach(ch => {
-        if (!freqCounter[ch])
-            freqCounter[ch] = 1;
-        else
-            freqCounter[ch]++;
-    });
-
-    // Observe this array. It's kinda Map only.
-    console.log(freqCounter);
-
-    for (let i = 0; i < inputString.length - 1; i++) {
-        let ch = inputString[i];
-        if (freqCounter[ch] == 1)
-            return ch;
+  for(let i = 0; i < s.length; i++){
+    if(!count[s[i]]){
+      count[s[i]] = 1;
+    } else {
+      count[s[i]] += 1;
     }
-    return 'No Unique Character Found';
-}
+  }
+
+  for(let i = 0; i < s.length; i++){
+    if(count[s[i]] == 1){
+      return i;
+    }
+  }
+  return index;
+};
 
 //0(n) = n
 //space = n
