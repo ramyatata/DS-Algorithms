@@ -10,8 +10,6 @@ function palindrome(str) {
   return str === str.split('').reverse().join('');
 }
 
-
-
 palindrome("eye");
 
 // o(n) = linear length of str
