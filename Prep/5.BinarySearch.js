@@ -5,30 +5,30 @@ Binary search relies on a divide and conquer strategy to find a value within an 
 
 function BinarySearch(arr, target) {
   let midIndex = Math.floor(arr.length/2);
-  let midVal = arr[midInd];
-  let startInd = 0;
-  let endIndex = array.length - 1;
+  let midVal = arr[midIndex];
+  let startIndex = 0;
+  let endIndex = arr.length - 1;
 
-  while(midVal !== target && startInd !== endIndex) {
+  while(midVal !== target && startIndex !== endIndex) {
     if(target > midVal){
-      startIndex = midInd + 1;
+      startIndex = midIndex + 1;
       midIndex = Math.floor((startIndex + endIndex)/2);
-      midVal = arr[midInd];
+      midVal = arr[midIndex];
     } else if(target < midVal){
-      endIndex = midInd - 1;
+      endIndex = midIndex - 1;
       midIndex = Math.floor((startIndex + endIndex)/2);
-      midVal = arr[midInd];
+      midVal = arr[midIndex];
     }
   }
 
   if(midVal === target){
-    return midInd;
+    return midIndex;
   } else {
     return -1;
   }
 }
 
-findIndex([1, 4], 20);
+BinarySearch([1, 4, 6, 7, 12, 13, 15, 18, 19, 20, 22, 24], 24);
 
 // o(n) = linear length of str
 //space = constant
