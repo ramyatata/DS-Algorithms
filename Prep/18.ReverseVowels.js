@@ -24,3 +24,6 @@ function ReverseVowels(arr) {
   return arr;
 }
 SwapVowels(["h", "e", "i", "o", "s", "a"]])
+
+//time complexity - o(n)
+//space complexity - o(1)
