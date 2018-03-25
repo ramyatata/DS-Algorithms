@@ -1,4 +1,4 @@
-/* Queue */
+/* Implement Queue */
 class Node {
   constructor(val){
     this.val = val;
