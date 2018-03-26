@@ -1,4 +1,4 @@
-/* Implement Queue */
+/* Implement Queue with time complexityxs*/
 class Node {
   constructor(val){
     this.val = val;
