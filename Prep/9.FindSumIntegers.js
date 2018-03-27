@@ -1,6 +1,6 @@
 /* Given a sorted array of integers and a target value, determine if there exists two integers in the array that sum up to the target value.
 
-See if you can solve this in O(N) time and O(1) auxiliary space. */
+See if you can solve this in O(N) time and O(1) auxiliary space. Use pointer methods to solve this*/
 
 
 function findSum(arr, tar) {
@@ -24,3 +24,5 @@ function findSum(arr, tar) {
 }
 
 findSum([1, 2, 3, 4, 7, 9, 10], 20);
+
+
